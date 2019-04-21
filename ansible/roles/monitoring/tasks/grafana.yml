@@ -1,0 +1,12 @@
+- name: create grafana conf path
+  file:
+    path: "{{ monitoring_project_path }}/grafana"
+    state: directory
+
+- name: create grafana data path
+  file:
+    path: "{{ grafana_data_path }}"
+    state: directory
+    owner: 472
+    group: 472
+  become: yes

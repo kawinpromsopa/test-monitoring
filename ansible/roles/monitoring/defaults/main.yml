@@ -1,0 +1,10 @@
+monitoring_project_path: ~/monitoring
+monitoring_ec2_name_prefix: <name_of_monitoring>
+monitoring_username: <user>
+monitoring_password: <passwd>
+
+grafana_data_path: /data/grafana
+grafana_domain: <grafana_domain>
+prometheus_data_path: /data/prometheus
+prometheus_domain: <prometheus_domain>
+alertmanager_domain: <alertmanager_domain>

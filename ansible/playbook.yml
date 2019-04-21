@@ -1,0 +1,9 @@
+- hosts: monitoring
+  roles:
+    - docker
+    - nginx
+    - monitoring
+
+- hosts: node
+  roles:
+    - node_exporter

@@ -1,0 +1,8 @@
+groups:
+  - name: exporter
+    rules:
+      - alert: ExporterDown
+        expr: up{job=~".*_exporter"} == 0
+        for: 10s
+        annotations:
+          summary: ""

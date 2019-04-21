@@ -1,0 +1,14 @@
+[all]
+monitoring ansible_ssh_host=<target_ip_server> ansible_ssh_port=22 ansible_user=root ansible_python_interpreter=/usr/bin/python3
+node ansible_ssh_host=<target_ip_server> ansible_ssh_port=22 ansible_user=root ansible_python_interpreter=/usr/bin/python3
+
+[monitoring]
+monitoring
+[monitoring:vars]
+monitoring=<target_ip_server>
+
+
+[node]
+node
+[node:vars]
+node=<target_ip_server>
