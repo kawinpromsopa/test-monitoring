@@ -8,5 +8,5 @@
    - ansible/monitoring/defaults/main.yml
    - ansible/monitoring/templates/prometheus.yml
 
-3). After already installed for grafana,prometheus,node_exporter Step adding "datasource" On grafana using `prometheus.<your_domain_name>.com` without "port"
-   * Cause used Nginx reverse proxy to docker container
+3). After already installed for grafana,prometheus,node_exporter Step adding "data source" On grafana using `prometheus.<your_domain_name>.com` without "port"
+   * Because used Nginx reverse proxy to docker container
